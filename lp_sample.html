@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>パーソナルコーチング with 山田太郎 | 人生を変える第一歩</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+        }
+        .testimonial-card {
+            transition: transform 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+        }
+        .pricing-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .section {
+            padding: 4rem 1rem;
+        }
+        .btn-primary {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #388E3C;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .faq-item {
+            border-bottom: 1px solid #eaeaea;
+            padding: 20px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            position: relative;
+            font-weight: 600;
+        }
+        .feature-card {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-6">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-green-600">山田コーチング</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-green-600 transition duration-300">コーチについて</a>
+                <a href="#services" class="text-gray-600 hover:text-green-600 transition duration-300">サービス</a>
+                <a href="#pricing" class="text-gray-600 hover:text-green-600 transition duration-300">料金プラン</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-green-600 transition duration-300">お客様の声</a>
+                <a href="#faq" class="text-gray-600 hover:text-green-600 transition duration-300">よくある質問</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg section">
+        <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight text-gray-800 mb-4">
+                    あなたの人生を<br>次のレベルへ
+                </h1>
+                <p class="text-xl text-gray-700 mb-8">
+                    プロフェッショナルコーチング・セッションで<br>目標達成までの道のりをサポートします
+                </p>
+                <a href="#contact" class="btn-primary inline-block">
+                    無料カウンセリングを予約する
+                </a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="bg-white p-3 rounded-lg shadow-xl w-80 h-96">
+                    <div class="bg-gray-200 w-full h-full flex items-center justify-center rounded">
+                        <i class="fas fa-user-tie text-6xl text-gray-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Statement Section -->
+    <section class="bg-white section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">こんな悩みはありませんか？</h2>
+                <div class="w-16 h-1 bg-green-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">目標は持っているけど、進むべき道が見えない</h3>
+                    <p class="text-gray-600">明確な目標はあるものの、そこに到達するための具体的なステップが見えず、立ち止まっている状態。</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-battery-quarter"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">モチベーションが続かず、行動に移せない</h3>
+                    <p class="text-gray-600">最初は意気込んでも、途中でモチベーションが低下し、継続的な行動に移せずにいる。</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="text-green-500 text-3xl mb-4">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">仕事と私生活のバランスが取れない</h3>
+                    <p class="text-gray-600">キャリアを優先するあまり、私生活が疎かになっている。または、その逆の状況で悩んでいる。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Benefits Section -->
+    <section id="services" class="bg-gray-50 section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">山田コーチングで得られる3つの価値</h2>
+                <p class="text-xl text-gray-600">あなたの可能性を最大限に引き出し、理想の未来へと導きます</p>
+                <div class="w-16 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-6">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">明確なビジョンの構築</h3>
+                    <p class="text-gray-600">
+                        あなたが本当に望む未来の姿を明確にし、具体的なビジョンを一緒に構築します。目的地が分かれば、そこへの道筋も見えてきます。
+                    </p>
+                </div>
+                
+                <div class="feature-card bg-white p-6">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">実践的な行動計画</h3>
+                    <p class="text-gray-600">
+                        目標達成のための具体的なステップを設計し、あなたに合ったペースで進むための行動計画を共に作成します。
+                    </p>
+                </div>
+                
+                <div class="feature-card bg-white p-6">
+                    <div class="text-green-500 text-4xl mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">継続的なサポート体制</h3>
+                    <p class="text-gray-600">
+                        定期的なフォローアップセッションと、いつでも相談できるサポート体制で、モチベーションを維持し、継続的な成長を促進します。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About the Coach Section -->
+    <section id="about" class="bg-white section">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                    <div class="w-64 h-64 rounded-full bg-gray-200 flex items-center justify-center shadow-lg">
+                        <i class="fas fa-user text-5xl text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl font-bold mb-4">山田 太郎</h2>
+                    <h3 class="text-xl font-semibold text-green-600 mb-4">プロフェッショナルコーチ</h3>
+                    <div class="w-16 h-1 bg-green-500 mb-6"></div>
+                    <p class="text-gray-700 mb-6">
+                        10年以上のビジネスキャリアと5年のコーチング経験を持つプロフェッショナル。
+                        大手企業の管理職を経て、人材育成の重要性を実感し、コーチングの世界へ。
+                        これまで200名以上のクライアントの目標達成をサポートしてきました。
+                    </p>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold mb-2">資格・認定</h4>
+                        <ul class="list-disc list-inside text-gray-700">
+                            <li>国際コーチ連盟（ICF）認定プロフェッショナルコーチ</li>
+                            <li>米国NLPプラクティショナー</li>
+                            <li>ビジネス心理マスター</li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-700">
+                        「誰もが自分らしく輝ける人生を送るべきだ」という信念のもと、
+                        一人ひとりの強みを最大限に引き出すコーチングを提供しています。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="bg-gray-50 section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">コーチングプラン</h2>
+                <p class="text-xl text-gray-600">あなたのニーズに合わせた最適なプランをご用意しています</p>
+                <div class="w-16 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden w-full md:w-1/3">
+                    <div class="p-6 bg-green-100">
+                        <h3 class="text-xl font-bold text-center">スタートアッププラン</h3>
+                        <div class="text-center my-4">
+                            <span class="text-3xl font-bold">¥30,000</span>
+                            <span class="text-gray-600 ml-2">/ 月</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>月2回の個別セッション (60分/回)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>目標設定サポート</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Eメールによるサポート</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times mr-2"></i>
+                                <span>アクションプラン作成</span>
+                            </li>
+                            <li class="flex items-center text-gray-400">
+                                <i class="fas fa-times mr-2"></i>
+                                <span>週次進捗確認</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="#contact" class="btn-primary inline-block">申し込む</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden w-full md:w-1/3 border-2 border-green-500 transform md:scale-105">
+                    <div class="p-1 bg-green-500"></div>
+                    <div class="p-6 bg-green-100">
+                        <div class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                            人気
+                        </div>
+                        <h3 class="text-xl font-bold text-center">グロースプラン</h3>
+                        <div class="text-center my-4">
+                            <span class="text-3xl font-bold">¥50,000</span>
+                            <span class="text-gray-600 ml-2">/ 月</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>月4回の個別セッション (60分/回)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>目標設定サポート</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>Eメール・電話によるサポート</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>アクションプラン作成</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>週次進捗確認</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="#contact" class="btn-primary inline-block">申し込む</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pricing-card bg-white rounded-lg shadow-lg overflow-hidden w-full md:w-1/3">
+                    <div class="p-6 bg-green-100">
+                        <h3 class="text-xl font-bold text-center">エリートプラン</h3>
+                        <div class="text-center my-4">
+                            <span class="text-3xl font-bold">¥80,000</span>
+                            <span class="text-gray-600 ml-2">/ 月</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>週2回の個別セッション (90分/回)</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>包括的な目標設定と戦略立案</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>24時間サポート体制</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>詳細なアクションプラン</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-check text-green-500 mr-2"></i>
+                                <span>日次進捗確認</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="#contact" class="btn-primary inline-block">申し込む</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="bg-white section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">お客様の声</h2>
+                <p class="text-xl text-gray-600">実際にコーチングを受けた方々の体験談をご紹介します</p>
+                <div class="w-16 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-green-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">佐藤 健太</h4>
+                            <p class="text-sm text-gray-500">会社経営者</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        「山田さんのコーチングを受けて、経営者としての視点が大きく変わりました。売上だけでなく、チームの育成にも目を向けられるようになり、結果的に会社全体のパフォーマンスが向上しました。」
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-green-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">田中 美香</h4>
+                            <p class="text-sm text-gray-500">マーケティングマネージャー</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        「仕事とプライベートの両立に悩んでいましたが、山田コーチのサポートで自分の優先順位を整理することができました。効率的な時間管理スキルも身につき、ストレスが大幅に減りました。」
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card bg-gray-50 p-6 rounded-lg shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center mr-3">
+                            <i class="fas fa-user text-green-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">鈴木 大輔</h4>
+                            <p class="text-sm text-gray-500">営業部長</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        「目標は持っていても行動に移せずにいました。山田さんのコーチングで具体的な行動計画を立て、小さな成功体験を積み重ねることで、自信を取り戻すことができました。半年で売上目標を120%達成しました。」
+                    </p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-gray-50 section">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">よくある質問</h2>
+                <p class="text-xl text-gray-600">お客様からよくいただくご質問にお答えします</p>
+                <div class="w-16 h-1 bg-green-500 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-item">
+                    <h3 class="faq-question text-xl">コーチングとカウンセリングの違いは何ですか？</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>
+                            カウンセリングが過去の問題解決や心のケアに焦点を当てるのに対し、コーチングは現在の状況から未来の目標達成に向けたサポートを行います。コーチングは基本的に健全な状態の方を対象とし、可能性を最大化することを目指します。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question text-xl">セッションはどのように行われますか？</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>
+                            セッションは対面またはオンライン（Zoom等）で行います。初回は現状分析と目標設定を行い、2回目以降は進捗確認と課題解決、新たな行動計画の策定などを行います。セッションの頻度や内容はプランによって異なります。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question text-xl">どのくらいの期間でコーチング効果が出ますか？</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>
+                            個人差がありますが、多くの方は3ヶ月程度で変化を実感されます。小さな行動変容は早い段階で現れることが多いですが、大きな目標達成には6ヶ月〜1年のコミットメントをおすすめしています。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question text-xl">途中でプランを変更することはできますか？</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>
+                            はい、可能です。目標の変化やライフスタイルの変化に合わせて、柔軟にプランの変更に対応しています。次の月からのプラン変更をご希望の場合は、前月の15日までにご連絡ください。
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <h3 class="faq-question text-xl">無料カウンセリングでは何をしますか？</h3>
+                    <div class="mt-2 text-gray-600">
+                        <p>
+                            無料カウンセリング（30分）では、あなたの現状や目標についてお聞きし、コーチングがお役に立てるかどうかを一緒に確認します。コーチングの進め方や料金体系についての説明も行いますので、疑問点があればお気軽にご質問ください。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="gradient-bg section">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6 text-gray-800">人生を変える第一歩を今、踏み出しませんか？</h2>
+            <p class="text-xl mb-8 text-gray-700">
+                無料カウンセリングセッション（30分）で、あなたの可能性を一緒に探ってみましょう
+            </p>
+            <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+                            お名前
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="山田 花子">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                            メールアドレス
+                        </label>
+                        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="example@mail.com">
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+                            メッセージ
+                        </label>
+                        <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="4" placeholder="ご相談内容やご質問などをご記入ください"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button class="btn-primary" type="button">
+                            無料カウンセリングを予約する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-4">山田コーチング</h3>
+                    <p class="text-gray-400 mb-4">
+                        あなたの可能性を最大限に引き出し、<br>
+                        理想の人生を実現するためのサポートをします
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mb-8 md:mb-0">
+                    <h4 class="text-lg font-bold mb-4">お問い合わせ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <span>info@yamada-coaching.jp</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2"></i>
+                            <span>03-1234-5678</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2"></i>
+                            <span>東京都千代田区丸の内1-1-1</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">コンテンツ</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#about" class="hover:text-white transition">コーチについて</a></li>
+                        <li><a href="#services" class="hover:text-white transition">サービス</a></li>
+                        <li><a href="#pricing" class="hover:text-white transition">料金プラン</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition">お客様の声</a></li>
+                        <li><a href="#faq" class="hover:text-white transition">よくある質問</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 山田コーチング. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ開閉機能
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+        
+        // スムーススクロール
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
